@@ -1,4 +1,4 @@
-# Aplicaçã backend do projeto Services4u
+# Aplicação backend do projeto Services4u
 
 ## 🤌 Requisitos para rodar, clonar e testar a aplicação:
 
