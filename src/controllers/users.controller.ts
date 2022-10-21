@@ -1,6 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { Request, Response } from "express";
-import { CreateUserService } from "services/users.services";
+import { CreateUserService } from "../services/users.services";
 
 export const CreateUser = async (req: Request, res: Response) => {
   try {
