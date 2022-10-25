@@ -2,6 +2,8 @@
 node_modules
 yarn-error.log
 
+# Dist folders
+/dist
 # Lock files
 package-*.json
 *.lock

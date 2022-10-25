@@ -12,14 +12,20 @@ model Users {
     name       String
     email      String     @unique
     password   String
+    phone      String     @unique
     created_at DateTime   @default(now())
     updated_at DateTime   @updatedAt
-    services   Services[]
+    work_area  String[]
+    Services   Services[]
 }
 
 model Services {
-    id     String @id @default(auto()) @map("_id") @db.ObjectId
-    title  String
-    user   Users  @relation(fields: [userId], references: [id], onDelete: Cascade)
-    userId String @db.ObjectId
+    id           String   @id @default(auto()) @map("_id") @db.ObjectId
+    title        String
+    description  String
+    location     String
+    price        String
+    service_area String[]
+    user         Users    @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId       String   @db.ObjectId
 }
