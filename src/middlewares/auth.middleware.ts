@@ -1,5 +1,5 @@
 import { verify } from "jsonwebtoken";
-import { authConf } from "config/auth.config";
+import { authConf } from "../config/auth.config";
 import { Request, Response, NextFunction } from "express";
 
 interface TokenPayload {

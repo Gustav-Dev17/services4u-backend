@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import prisma from "services/prisma.services";
-import { authConf } from "config/auth.config";
+import prisma from "../services/prisma.services";
+import { authConf } from "../config/auth.config";
 
 export const LoginService = async (email: string, password: string) => {
     try {

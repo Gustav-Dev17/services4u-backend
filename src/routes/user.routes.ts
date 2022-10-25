@@ -1,6 +1,6 @@
 import express from "express";
-import { DoLogin } from "controllers/auth.controller";
-import { AuthMiddleware } from "middlewares/auth.middleware";
+import { DoLogin } from "../controllers/auth.controller";
+import { AuthMiddleware } from "../middlewares/auth.middleware";
 import { CreateUser, ReadUser, ReadAllUsers, UpdateUser, DeleteUser } from "../controllers/users.controller";
 import { CreateService, ReadService, ReadAllServices, ReadServicesByUser, UpdateService, DeleteService } from "../controllers/services.controller";
 

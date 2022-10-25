@@ -1,5 +1,5 @@
-import prisma from "services/prisma.services";
-import { IService, IRequestServiceBody } from "types/service.body.types";
+import prisma from "../services/prisma.services";
+import { IService, IRequestServiceBody } from "../types/service.body.types";
 
 export const CreateServicesRepo = (body: IService) => {
   return prisma.services.create({ data: body });
